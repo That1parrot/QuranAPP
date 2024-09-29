@@ -1,0 +1,132 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'ProximaVara', Arial, sans-serif;
+    background-color: var(--color-background-default);
+    color: var(--color-text-default);
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('https://yourbackgroundimage.url'); /* optional */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--color-primary-medium);
+    margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    font-size: 1rem;
+    border: 1px solid var(--color-borders-hairline);
+    border-radius: 5px;
+    background-color: var(--color-background-alternative-faded);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--color-primary-medium);
+    color: var(--color-text-inverse);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-primary-deep);
+}
+
+/* Verse Display Section */
+.verse-section {
+    padding: 20px;
+    background-color: var(--color-background-alternative-medium);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.verse {
+    font-size: 1.25rem;
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 15px;
+}
+
+#audioContainer {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-text-faded);
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    input[type="text"] {
+        width: 70%;
+    }
+
+    button {
+        width: 50%;
+    }
+
+    .verse {
+        font-size: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Colors inspired by Quran.com */
+:root {
+    --color-primary-medium: #2ca4ab;
+    --color-primary-deep: #1e8d94;
+    --color-text-default: #ffffff;
+    --color-text-inverse: #ffffff;
+    --color-text-faded: #666666;
+    --color-background-default: #1f2125;
+    --color-background-alternative-faded: #343a40;
+    --color-background-alternative-medium: #343a40;
+    --color-borders-hairline: #626669;
+}

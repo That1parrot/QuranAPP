@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css?v=1"> <!-- Cache-busting added -->
+    <link rel="icon" href="vf.ico" type="image/x-icon">
+    <title>Qur'an Verse Finder</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Holy Qur'an Verse Finder 📖</h1>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <div class="input-container">
+                    <input type="text" id="verseInput" placeholder="Enter verse (e.g., 1:1)" inputmode="numeric" pattern="[0-9]*">
+                    <button id="fetchVerseButton" aria-label="Find Verse">Find Verse 🔎</button>
+                    <button id="nextVerseButton">Next Verse ⏩</button>
+                </div>
+            </section>
+
+            <section class="verse-section" aria-live="polite">
+                <div class="verse" id="verseDisplay"></div>
+                <div id="audioContainer"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Qur'an Verse Finder. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript file linked -->
+    <script src="script.js"></script>
+</body>
+
+</html>
